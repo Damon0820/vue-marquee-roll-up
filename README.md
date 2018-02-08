@@ -5,19 +5,21 @@ MarqueeUp向上轮播的跑马灯/RollNotice向上走的滚动公告/
 
 ## Usage
 
-# npm 下载
+## npm 下载
 npm install marquee-roll-up --save-dev
 
-# import 引入
+## import 引入
 import MarqueeRollUp from 'marquee-roll-up'
 
-# use in vue component 在vue组件内使用
+## use in vue component 在vue组件内使用
 
+  ``` html
 <template>
   <MarqueeRollUp speed="300" autoPlay="5000" :marqueeList="list" 
   height="100" width="200" bg="#f99" color="#fff" fontSize="40"/>
 </template>
-
+```
+``` javascript
 <script>
   import MarqueeRollUp from 'marquee-roll-up'
   export default {
@@ -34,9 +36,9 @@ import MarqueeRollUp from 'marquee-roll-up'
     }
   }
 </script>
+```
 
-
-# Params: props 可传属性参数
+## Params: props 可传属性参数
 
       // 	宽度（px）      
       width: {
