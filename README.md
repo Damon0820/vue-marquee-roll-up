@@ -5,8 +5,8 @@ MarqueeUp向上轮播的跑马灯/RollNotice向上走的滚动公告/
 
 ## show result 效果展示
 
-[![Damon风 blog]](https://www.cnblogs.com/damonFeng/)
-![Damon风](https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show1.png "Damon风")
+[Damon风的blog地址](https://www.cnblogs.com/damonFeng/)
+![Damon风](https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show2.gif "Damon风")
 
 ## Usage
 
