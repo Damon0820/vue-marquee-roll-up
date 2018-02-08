@@ -5,8 +5,8 @@ MarqueeUp向上轮播的跑马灯/RollNotice向上走的滚动公告/
 
 ## show result 效果展示
 
-[![Damon风 blog]](http://baidu.com)  
-[Damon风 blog]:https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show2.gif "Damon风 blog"
+[![Damon风 blog]](https://www.cnblogs.com/damonFeng/)
+![Damon风](https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show1.png "Damon风")
 
 ## Usage
 
@@ -43,8 +43,9 @@ import MarqueeRollUp from 'marquee-roll-up'
 </script>
 ```
 
-## Params: props 可传属性参数
+## Params: props 可传属性参数，及参数的格式限制
 
+      const regNumber: 
       // 	宽度（px）      
       width: {
         validator (val) {
