@@ -3,6 +3,11 @@ MarqueeUp向上轮播的跑马灯/RollNotice向上走的滚动公告/
 
 > A vue plugin/component which is like a advertising board or marquee roll up。 一个vue的插件/组件，实现了类似广告牌向上滚动的效果滚动，或者说是向上滚动的跑马灯效果。
 
+## show result 效果展示
+
+[![Damon风 blog]](http://baidu.com)  
+[Damon风 blog]:https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show2.gif "Damon风 blog"
+
 ## Usage
 
 ## npm 下载
@@ -98,3 +103,4 @@ import MarqueeRollUp from 'marquee-roll-up'
         }
       }
 
+![Damon风](https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show1.png "Damon风")
