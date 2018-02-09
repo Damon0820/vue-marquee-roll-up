@@ -5,17 +5,17 @@ vue插件：向上轮播的跑马灯/向上走的滚动公告。vue's plugin:  a
 
 ## show result 效果展示
 
-[Damon风的blog地址](https://www.cnblogs.com/damonFeng/)
 ![Damon风](https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show2.gif "Damon风")
+</br>[Damon风的blog地址](https://www.cnblogs.com/damonFeng/)
 
 ## Installation
 
-### npm 下载
+### npm
 ```
 npm install marquee-roll-up --save-dev
 ````
 
-### import 引入
+### import
 ````
 import MarqueeRollUp from 'marquee-roll-up'
 ````
@@ -57,15 +57,16 @@ import MarqueeRollUp from 'marquee-roll-up'
 </script>
 ```
 
-### Props 可传属性参数，及参数的格式限制
+### Props 参数
 
-      * <em>marqueeList</em>: [Array]跑马灯所跑的信息 the data of the marquee
-      * <em>width,height</em>: (px) [Number/String] && match(/\d+/)跑马灯的宽度和高度 the maximum width and height of the preview container。 width-default: 200 height-default: 38
-      * <em>bg</em>: (color) [String]跑马灯的背景颜色 the backgroundColor of the preview container。 default: '#BD9955'
-      * <em>color</em>: (color) [String]跑马灯的内容区字体颜色 the color of the font。 default: '#fff'
-      * <em>fontSize</em>: (px) [Number/String] && match(/\d+/)跑马灯的字体大小 the fontSize of the font。 default: 12
-      * <em>autoplay</em>: (ms) [Number/String] && match(/\d+/)轮播间隔时间 the autoplay time。 default: 3000
-      * <em>speed</em>: (ms) [Number/String] && match(/\d+/)轮播动画的速度 the speed of animation。 default: 500
+      * marqueeList:  [Array]                              跑马灯所跑的信息 the data of the marquee
+      * width,height: (px) [Number/String] && match(/\d+/) 跑马灯的宽度和高度 the maximum width and height of the preview container。 width-default: 200 height-default: 38
+      * bg:           (color) [String]                     跑马灯的背景颜色 the backgroundColor of the preview container。 default: '#BD9955'
+      * color:        (color) [String]                     跑马灯的内容区字体颜色 the color of the font。 default: '#fff'
+      * fontSize:     (px) [Number/String] && match(/\d+/) 跑马灯的字体大小 the fontSize of the font。 default: 12
+      * autoplay:     (ms) [Number/String] && match(/\d+/) 轮播间隔时间 the autoplay time。 default: 3000
+      * speed:        (ms) [Number/String] && match(/\d+/) 轮播动画的速度 the speed of animation。 default: 500
+
 
 ### show2 上面使用事例的配置参数展示图 VS 默认样式展示图。the show of above example with personal options VS the show with default options
 ![Damon风](https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show1.png "Damon风")
