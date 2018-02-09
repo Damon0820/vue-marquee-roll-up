@@ -1,5 +1,5 @@
 # vue-marquee-roll-up
-MarqueeUp向上轮播的跑马灯/RollNotice向上走的滚动公告/
+vue插件：向上轮播的跑马灯/向上走的滚动公告。vue's plugin:  a marquee which roll up. mobile-friendly
 
 > A vue plugin/component which is like a advertising board or marquee roll up。 一个vue的插件/组件，实现了类似广告牌向上滚动的效果滚动，或者说是向上滚动的跑马灯效果。
 
@@ -8,20 +8,34 @@ MarqueeUp向上轮播的跑马灯/RollNotice向上走的滚动公告/
 [Damon风的blog地址](https://www.cnblogs.com/damonFeng/)
 ![Damon风](https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show2.gif "Damon风")
 
-## Usage
+## Installation
 
-## npm 下载
+### npm 下载
+```
 npm install marquee-roll-up --save-dev
+````
 
-## import 引入
+### import 引入
+````
 import MarqueeRollUp from 'marquee-roll-up'
+````
 
-## use in vue component 在vue组件内使用
+### Usage
 
-  ``` html
+``` html
 <template>
-  <MarqueeRollUp speed="300" autoPlay="5000" :marqueeList="list" 
-  height="100" width="200" bg="#f99" color="#fff" fontSize="40"/>
+  <div>
+    <MarqueeRollUp 
+      :marqueeList="list"
+      speed="300" 
+      autoPlay="5000" 
+      height="100" 
+      width="200" 
+      bg="#f99" 
+      color="#fff" 
+      fontSize="40">
+    <MarqueeRollUp/>
+  </div>
 </template>
 ```
 ``` javascript
@@ -43,65 +57,15 @@ import MarqueeRollUp from 'marquee-roll-up'
 </script>
 ```
 
-## Params: props 可传属性参数，及参数的格式限制
+### Props 可传属性参数，及参数的格式限制
 
-      const regNumber: 
-      // 	宽度（px）      
-      width: {
-        validator (val) {
-          return regNumber.test(val)
-        },
-        default: 200
-      },
-      // 	高度（px）
-      height: {
-        validator (val) {
-          return regNumber.test(val)
-        },
-        default: 38
-      },
-      // 	背景颜色
-      bg: {
-        type: String,
-        default: '#BD9955'
-      },
-      // 	字体颜色
-      color: {
-        type: String,
-        default: '#fff'
-      },
-      // fontSize (px)
-      fontSize: {
-        validator (val) {
-          return regNumber.test(val)
-        },
-        default: 12
-      },
-      // 	自动播放时间（毫秒ms）
-      autoplay: {
-        validator (val) {
-          return regNumber.test(val)
-        },
-        default: 3000
-      },
-      // 	切换速度（毫秒ms）
-      speed: {
-        validator (val) {
-          return regNumber.test(val)
-        },
-        default: 500
-      },
-      marqueeList: {
-        type: Array,
-        default: function () {
-          return [
-            '测试数据1',
-            '测试数据2',
-            '测试数据3',
-            '测试数据4',
-            '测试数据5'
-          ]
-        }
-      }
+      * <em>marqueeList</em>: [Array]跑马灯所跑的信息 the data of the marquee
+      * <em>width,height</em>: (px) [Number/String] && match(/\d+/)跑马灯的宽度和高度 the maximum width and height of the preview container。 width-default: 200 height-default: 38
+      * <em>bg</em>: (color) [String]跑马灯的背景颜色 the backgroundColor of the preview container。 default: '#BD9955'
+      * <em>color</em>: (color) [String]跑马灯的内容区字体颜色 the color of the font。 default: '#fff'
+      * <em>fontSize</em>: (px) [Number/String] && match(/\d+/)跑马灯的字体大小 the fontSize of the font。 default: 12
+      * <em>autoplay</em>: (ms) [Number/String] && match(/\d+/)轮播间隔时间 the autoplay time。 default: 3000
+      * <em>speed</em>: (ms) [Number/String] && match(/\d+/)轮播动画的速度 the speed of animation。 default: 500
 
+### show2 上面使用事例的配置参数展示图 VS 默认样式展示图。the show of above example with personal options VS the show with default options
 ![Damon风](https://github.com/Damon0820/vue-marquee-roll-up/blob/master/static/img/show1.png "Damon风")
