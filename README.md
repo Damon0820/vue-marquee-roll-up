@@ -12,7 +12,7 @@ vue插件：向上轮播的跑马灯/向上走的滚动公告。vue's plugin:  a
 
 ### npm
 ```
-npm install marquee-roll-up --save-dev
+npm install marquee-roll-up --save
 ````
 
 ### import
